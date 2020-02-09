@@ -1,0 +1,48 @@
+.table {
+    font-family: 'Merriweather', serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table td {
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+    width: 50%;
+}
+
+
+/* i have used this nth-child trick from internet */
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: rgb(222, 241, 221);
+}
+
+.text {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.field {
+    width: 20%;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+}
+
+.submit_click {
+    /* width: 20%; */
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+}
+
+.submit_click:hover {
+    background-color: rgb(212, 214, 210);
+}
+
+#owner_pic {
+    max-height: 100px;
+    max-width: 100px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="github.css">
+    <link rel="icon" type="image/png" href="./github_mascot.jpg">
+    <script src="./github.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <title>GitHub API</title>
+
+</head>
+
+<body>
+
+    <h1 class="text"><u>GitHub API</u></h1>
+
+
+    <p>
+        <h2 class="text">Profile Finder for GitHub</h2>
+    </p>
+
+    <input type="text" class="field" id="user_search" placeholder="Enter a username...">
+    <input class="submit_click" type="submit" onclick="user();">
+    <table class="table">
+        <tr>
+            <td>Pic</td>
+            <td align="center"><img id="owner_pic" src="github_mascot.jpg"></td>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td id="Username"></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td id="Name"></td>
+        </tr>
+        <tr>
+            <td>Avatar URL</td>
+            <td>
+                <a id="avatar_url"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>URL to the github handle</td>
+            <td>
+                <a id="html_url"></a>
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td id="Email"></td>
+        </tr>
+        <tr>
+            <td>Biodata</td>
+            <td id="Biodata"></td>
+        </tr>
+        <tr>
+            <td>Followers following a given user</td>
+            <td id="followers"></td>
+        </tr>
+        <tr>
+            <td>Users Following</td>
+            <td id="following"></td>
+        </tr>
+
+    </table>
+
+    <p>
+        <h2 class="text">Repo Finder for GitHub</h2>
+    </p>
+    <input type="text" id="user_repo" class="field" placeholder="Enter a username...">
+    <input type="text" id="repo" class="field" placeholder="Enter repo name of this user...">
+    <input type="submit" class="submit_click" onclick="repo();">
+    <table class="table">
+        <tr>
+            <td>Private / Public repository</td>
+            <td id="public_private"></td>
+        </tr>
+        <tr>
+            <td>Forks Count</td>
+            <td id="forks_count"></td>
+        </tr>
+        <tr>
+            <td>Stargazers count</td>
+            <td id="stargazers_count"></td>
+        </tr>
+        <tr>
+            <td>Watchers count</td>
+            <td id="watchers_count"></td>
+        </tr>
+        <tr>
+            <td>Topics of the repository</td>
+            <td id="topics"></td>
+        </tr>
+        <tr>
+            <td>License</td>
+            <td id="license"></td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>
